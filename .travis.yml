@@ -42,7 +42,7 @@ install:
   - cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
 
   # Run 'make' with four threads.
-  - make -j7
+  - make -j4
 
   # Install to OS.
   - sudo make install
