@@ -125,3 +125,8 @@ Within the *build* sub-directory, run:
 
 - Upon running the above command, image with human detected will be displayed on your screen.
 - Now, press any key to display real world coordinates on your console.
+
+# GMock
+- Class mocked - DescriptorMock.hpp
+- No need to change class diagrams, virtual classes already existed
+- Added Gmock dependemcy in CMake existing in vendor folder
