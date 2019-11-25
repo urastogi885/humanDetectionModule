@@ -17,7 +17,7 @@ TEST(imageInput, validFile) {
   /// Instantiate objects for various classes
   ImageInput imageInput;
   ReaderWriterMock* readerMock = new ReaderWriterMock();
-  /// Set mock to read images 
+  /// Set mock to read images
   imageInput.setReader(readerMock);
   /// Declare file path
   const std::string fileName = "../test/1_Human.jpg";
@@ -25,17 +25,16 @@ TEST(imageInput, validFile) {
   cv::Mat sampleImage = cv::imread(fileName, 1);
   /// Add mock implementation to check validity of image file path
   std::ifstream infile(fileName);
-  if(infile.good()) {
+  if (infile.good()) {
     /// If file path exist then return full mat file
     cv::Mat z = cv::Mat::zeros(720, 1280, CV_8U);
     EXPECT_CALL(*readerMock, read(_)).WillRepeatedly(
       Return(z));
-  }
-  else {
-    /// If file path does not exist then return empty mat file
-  cv::Mat m;
-  EXPECT_CALL(*readerMock, read(_)).WillRepeatedly(
-    Return(m));
+  } else {
+      /// If file path does not exist then return empty mat file
+      cv::Mat m;
+      EXPECT_CALL(*readerMock, read(_)).WillRepeatedly(
+        Return(m));
   }
 
   cv::Mat result = imageInput.readImage(fileName);
@@ -46,23 +45,22 @@ TEST(imageInput, invalidFile) {
   /// Instantiate objects for various classes
   ImageInput imageInput;
   ReaderWriterMock* readerMock = new ReaderWriterMock();
-  /// Set mock to read images 
+  /// Set mock to read images
   imageInput.setReader(readerMock);
   /// Declare file path
   const std::string fileName = "../test/23_Human.jpg";
   /// Add mock implementation to check validity of image file path
   std::ifstream infile(fileName);
-  if(infile.good()) {
+  if (infile.good()) {
     /// If file path exist then return full mat file
     cv::Mat z = cv::Mat::zeros(720, 1280, CV_8U);
     EXPECT_CALL(*readerMock, read(_)).WillRepeatedly(
       Return(z));
-  }
-  else {
-    /// If file path does not exist then return empty mat file
-  cv::Mat m;
-  EXPECT_CALL(*readerMock, read(_)).WillRepeatedly(
-    Return(m));
+  } else {
+      /// If file path does not exist then return empty mat file
+    cv::Mat m;
+    EXPECT_CALL(*readerMock, read(_)).WillRepeatedly(
+      Return(m));
   }
 
   try {

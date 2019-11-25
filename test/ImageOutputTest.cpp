@@ -16,7 +16,7 @@ TEST(imageOutput, drawBoundary) {
   /// Instantiate objects for various classes
   ImageOutput imageOutput;
   ReaderWriterMock* writerMock = new ReaderWriterMock();
-  /// Set mock to manipulate images 
+  /// Set mock to manipulate images
   imageOutput.setWriter(writerMock);
   /// Read image from file directory
   cv::Mat sampleImage = cv::imread("1_Human.jpg", 1);
@@ -26,7 +26,7 @@ TEST(imageOutput, drawBoundary) {
   detectedMock.push_back(r1);
   /// Add mock implementation to draw boundary on image
   cv::Mat z = cv::Mat::zeros(720, 1280, CV_8U);
-  EXPECT_CALL(*writerMock, drawRectangle(_,_)).WillRepeatedly(
+  EXPECT_CALL(*writerMock, drawRectangle(_, _)).WillRepeatedly(
     Return(z));
   /// Evaluate difference between the images
   cv::Mat diff = sampleImage
