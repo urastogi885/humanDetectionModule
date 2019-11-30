@@ -39,6 +39,8 @@ TEST(imageInput, validFile) {
 
   cv::Mat result = imageInput.readImage(fileName);
   EXPECT_EQ(sampleImage.size(), result.size());
+  /// delete mock object
+  delete readerMock;
 }
 
 TEST(imageInput, invalidFile) {
@@ -72,5 +74,7 @@ TEST(imageInput, invalidFile) {
   catch(std::exception& err) {
     EXPECT_EQ(err.what(), std::string("Invalid File Path"));
   }
+  /// delete mock object
+  delete readerMock;
 }
 
