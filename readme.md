@@ -46,11 +46,11 @@ to access our AIP Google Sheet.
 - Click on this [*link*](https://docs.google.com/document/d/13PsjxV7XgBc0alKm0SCArrKI3s-3ExToed2AtDfnuaQ/edit?usp=sharing)
 to access our Sprint notes document.
 
-## GMock
+## GMock - Umang
 
-- I have created a mock for the ReaderWrite class. File - [ReaderWriterMock.hpp](https://github.com/urastogi885/humanDetectionModule/blob/GMock_Extra_Credit_UR/test/ReaderWriterMock.hpp)
+- I have created a mock for the ReaderWrite class. File - [ReaderWriterMock.hpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ReaderWriterMock.hpp)
 - The mock includes 3 test cases to check valid file, invalid file, and draw boundary.
-- These tests are included in files - [ImageInputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/GMock_Extra_Credit_UR/test/ImageInputTest.cpp) [ImageOutputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/GMock_Extra_Credit_UR/test/ImageOutputTest.cpp)
+- These tests are included in files - [ImageInputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ImageInputTest.cpp) [ImageOutputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ImageOutputTest.cpp)
 - UML diagrams do not need to be changed as virtual classes existed during project submission.
 - Follow instructions gievn below to build and run the test cases.
  
