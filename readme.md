@@ -48,6 +48,11 @@ to access our AIP Google Sheet.
 - Click on this [*link*](https://docs.google.com/document/d/13PsjxV7XgBc0alKm0SCArrKI3s-3ExToed2AtDfnuaQ/edit?usp=sharing)
 to access our Sprint notes document.
 
+# GMock - Aruna
+- Class mocked - DescriptorMock.hpp
+- No need to change class diagrams, virtual classes already existed
+- Added Gmock dependemcy in CMake existing in vendor folder
+
 ## Install OpenCV
 
 - The module utilizes features of OpenCV.
@@ -125,8 +130,3 @@ Within the *build* sub-directory, run:
 
 - Upon running the above command, image with human detected will be displayed on your screen.
 - Now, press any key to display real world coordinates on your console.
-
-# GMock
-- Class mocked - DescriptorMock.hpp
-- No need to change class diagrams, virtual classes already existed
-- Added Gmock dependemcy in CMake existing in vendor folder
