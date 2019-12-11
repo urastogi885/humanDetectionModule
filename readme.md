@@ -25,8 +25,6 @@ functioning of the module. Upon running the demo, an image with a human detected
 if you press any key, real world coordinates are displayed on your console. For further details on demo, refer the 
 *Demo* section given below.
 
-
-
 ## Team Members
 
 All of the team members are pursuing M.Eng. in Robotics at the University of Maryland.
@@ -47,6 +45,19 @@ file before cloning the repository.
 to access our AIP Google Sheet.
 - Click on this [*link*](https://docs.google.com/document/d/13PsjxV7XgBc0alKm0SCArrKI3s-3ExToed2AtDfnuaQ/edit?usp=sharing)
 to access our Sprint notes document.
+
+# GMock - Aruna
+- Class mocked - DescriptorMock.hpp
+- No need to change class diagrams, virtual classes already existed
+- Added Gmock dependemcy in CMake existing in vendor folder
+
+## GMock - Umang
+
+- I have created a mock for the ReaderWrite class. File - [ReaderWriterMock.hpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ReaderWriterMock.hpp)
+- The mock includes 3 test cases to check valid file, invalid file, and draw boundary.
+- These tests are included in files - [ImageInputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ImageInputTest.cpp) [ImageOutputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ImageOutputTest.cpp)
+- UML diagrams do not need to be changed as virtual classes existed during project submission.
+- Follow instructions gievn below to build and run the test cases.
 
 ## Install OpenCV
 
@@ -91,6 +102,8 @@ to access our Sprint notes document.
 - Run the following command:
 ```shell script
 git clone --recursive https://github.com/urastogi885/humanDetectionModule
+cd humanDetectionModule/
+git checkout -b GMock_Extra_Credit_UR
 mkdir build
 cd build/
 cmake ..
