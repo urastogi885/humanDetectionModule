@@ -45,18 +45,11 @@ to access our AIP Google Sheet.
 - Click on this [*link*](https://docs.google.com/document/d/13PsjxV7XgBc0alKm0SCArrKI3s-3ExToed2AtDfnuaQ/edit?usp=sharing)
 to access our Sprint notes document.
 
-# GMock - Aruna
-- Class mocked - DescriptorMock.hpp
-- No need to change class diagrams, virtual classes already existed
-- Added Gmock dependemcy in CMake existing in vendor folder
+## GMock
 
-## GMock - Umang
-
-- I have created a mock for the ReaderWrite class. File - [ReaderWriterMock.hpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ReaderWriterMock.hpp)
-- The mock includes 3 test cases to check valid file, invalid file, and draw boundary.
-- These tests are included in files - [ImageInputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ImageInputTest.cpp) [ImageOutputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ImageOutputTest.cpp)
-- UML diagrams do not need to be changed as virtual classes existed during project submission.
-- Follow instructions gievn below to build and run the test cases.
+- The Descriptor and ReaderWriter class have been mocked. Files - [DescriptorMock.hpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/DescriptorMock.hpp), [ReaderWriterMock.hpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ReaderWriterMock.hpp)
+- The mock includes 5 test cases to check human detected, reduce boundary, valid file, invalid file, and draw boundary.
+- These tests are included in files - [HumanDetectorTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/HumanDetectorTest.cpp), [ImageInputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ImageInputTest.cpp), and [ImageOutputTest.cpp](https://github.com/urastogi885/humanDetectionModule/blob/master/test/ImageOutputTest.cpp).
 
 ## Install OpenCV
 
