@@ -1,5 +1,5 @@
 # We need a decent ubuntu dist
-sudo: required
+os: linux
 dist: trusty
 
 # Modern cpp settings from
