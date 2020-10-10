@@ -22,7 +22,7 @@ obstacles.
 The final deliverable of our module includes source files and license. We have included a simple demo to demonstrate the
 functioning of the module. Upon running the demo, an image with a human detected pops up on your screen. After that, 
 if you press any key, real world coordinates are displayed on your console. For further details on demo, refer the 
-*Demo* section given below.
+[Demo](https://github.com/urastogi885/humanDetectionModule#Demo) section given below.
 
 ## Team Members
 
@@ -54,6 +54,11 @@ to access our Sprint notes document.
 ## Install OpenCV
 
 - The module utilizes features of OpenCV.
+- If you have ROS installed on your system, comment the line that sources ROS in your .bashrc file, and restart your system.
+    ```shell script
+    gedit .bashrc
+    ```
+
 - Run the commands below to install OpenCV before cloning the repository:
     - Update your system:
     ```shell script
@@ -95,7 +100,6 @@ to access our Sprint notes document.
 ```shell script
 git clone --recursive https://github.com/urastogi885/humanDetectionModule
 cd humanDetectionModule/
-git checkout -b GMock_Extra_Credit_UR
 mkdir build
 cd build/
 cmake ..
