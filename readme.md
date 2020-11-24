@@ -1,5 +1,5 @@
 # Human Detection Module
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/urastogi885/humanDetectionModule/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/urastogi885/humanDetectionModule.svg?branch=master)](https://travis-ci.org/urastogi885/humanDetectionModule)
 ---
 
